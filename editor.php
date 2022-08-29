@@ -15,7 +15,16 @@ $text = file_get_contents($file);
 
 <br />
 <form>
-<textarea style="width: 252px; height: 313px;" name="text"><?= $text ?></textarea>
+<textarea name="text"><?= $text ?></textarea>
 <br />
 <input type="submit" value="Save" />
 </form>
+
+<style>
+    textarea {
+        width: 252px; 
+        height: 313px;
+        margin-top: 10px;
+        background-color: lightcyan;
+    }
+</style>
